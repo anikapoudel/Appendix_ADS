@@ -30,22 +30,22 @@ CREATE TABLE DIM_TIME(
 CREATE TABLE DIM_STATION(
     station_key INTEGER NOT NULL,
     station_id  INTEGER,
-    station_name VARCHAR(20),
-    region      VARCHAR(20),
+    station_name VARCHAR(60),
+    region      VARCHAR(60),
     CONSTRAINT pk_DIM_STATION PRIMARY KEY (station_key)
 );
 
 -- DIM_STATUS
 CREATE TABLE DIM_STATUS(
     status_key INTEGER NOT NULL,
-    status_name VARCHAR(20),
+    status_name VARCHAR(50),
     CONSTRAINT pk_DIM_STATUS PRIMARY KEY (status_key)
 );
 
 -- DIM_CRIMETYPE
 CREATE TABLE DIM_CRIMETYPE(
     crime_type_key INTEGER NOT NULL,
-    crime_type_name VARCHAR(20),
+    crime_type_name VARCHAR(80),
     CONSTRAINT pk_DIM_CRIMETYPE PRIMARY KEY (crime_type_key)
 );
 
